@@ -10,18 +10,11 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
             crossorigin="anonymous"
     />
-    <title>{% block title %} NewsPaper Title {% endblock title %}</title>
+    <title>{% block title %} Library Title {% endblock title %}</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">Newspaper</a>
-    {% if user.is_authenticated %}
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="{% url 'article_create' %}">+ New</a>
-            </li>
-        </ul>
-    {% endif %}
+    <a class="navbar-brand" href="{% url 'home' %}">LibraryMojo</a>
     <button
             class="navbar-toggler"
             type="button"
@@ -52,7 +45,7 @@
                             class="dropdown-menu dropdown-menu-lg-right"
                             aria-labelledby="navbarDropdown"
                     >
-                        <a class="dropdown-item" href="{% url 'password_change' %}"
+                        <a class="dropdown-item" href="#"
                         >Change password</a
                         >
                         <div class="dropdown-divider"></div>

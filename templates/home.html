@@ -6,17 +6,16 @@
         <p><a href="{% url 'logout' %}">Log Out</a></p>
     {% else %}
         <p>You are not logged in</p>
-        <a href="{% url 'login' %}">Log In</a>
-        |
-        <a href="{% url 'signup' %}">Sign Up</a>
     {% endif %}
     <br/>
     <div class="jumbotron">
-        <h1 class="display-4">Newspaper app</h1>
-        <p class="lead">A Newspaper website built with Django.</p>
+        <h1 class="display-4">LibraryMojo</h1>
+        <p class="lead">A Library Where books exist.</p>
         <p class="lead">
             <a class="btn btn-primary btn-lg" href="#"
-               role="button">View All Articles</a>
+               role="button">View All Book</a>
+               <a class="btn btn-primary btn-lg" href="#"
+               role="button">View Borrowed books</a>
         </p>
     </div>
 {% endblock content %}

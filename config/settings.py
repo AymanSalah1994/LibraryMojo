@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
+
     'accounts',
     'pages',
 ]
@@ -115,8 +117,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_REDIRECT_URL = 'home' # home is a Name of a View for redirect
+LOGOUT_REDIRECT_URL = 'home' # home is a Name of a View for redirect
+CRISPY_TEMPLATE_PACK = "bootstrap4"
